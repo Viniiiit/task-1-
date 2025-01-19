@@ -1,0 +1,53 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Creates a grid layout with responsive card sizing */
+  gap: 25px; /* Adds space between cards */
+  justify-items: center; /* Centers the cards horizontally in the grid */
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column; /* Stacks image on top and content below */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Fixed width for uniform card size */
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-image {
+  width: 100%; /* Full width of the card */
+  height: 150px; /* Fixed height for the image */
+  background-position: center;
+  background-size: cover;
+  border-bottom: 1px solid #eee; /* Optional: Add a separator line below the image */
+}
+
+.card-content {
+  padding: 10px;
+  text-align: center; /* Centers the text inside the card */
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-sub {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}

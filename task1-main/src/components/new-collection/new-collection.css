@@ -1,0 +1,74 @@
+.new-collection {
+  margin-top: 100px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.list-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* General container for the card */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px; /* Adjust width as needed */
+  height: 360px; /* Adjust height as needed */
+  margin: 20px;
+  border-radius: 15px;
+  background-color: #fff; /* Card background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures content stays within the card */
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image section of the card */
+.card-image {
+  width: 100%;
+  height: 60%; /* Takes 60% of the card height */
+  background-color: #f3f3f3; /* Fallback background color */
+  border-bottom: 1px solid #ddd; /* Separator line */
+}
+
+/* Title styling */
+.card-title {
+  margin: 10px 15px 5px; /* Top, Horizontal, Bottom spacing */
+  font-size: 1.2rem; /* Adjust size as needed */
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Subtitle styling */
+.card-sub {
+  margin: 5px 15px;
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Price styling */
+.card-price {
+  margin: 10px 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2c7a7b; /* Teal color for pricing */
+}

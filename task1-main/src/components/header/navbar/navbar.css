@@ -1,0 +1,70 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Links Container */
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links a {
+  all: unset;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  font-size: 2rem; /* Larger size for the text logo */
+  font-weight: bold;
+  color: #693208; /* Coffee color (can be adjusted) */
+}
+
+/* User Info Container */
+.navbar-user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between search and cart icons */
+}
+
+/* Search Icon Styling */
+.search-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Cart Icon Styling */
+.cart-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .navbar-links {
+    gap: 15px; /* Smaller gap for smaller screens */
+  }
+
+  .navbar-logo img {
+    width: 40px; /* Smaller logo on smaller screens */
+  }
+
+  .navbar-user-info {
+    gap: 10px; /* Adjust gap for smaller screens */
+  }
+
+  .search-icon,
+  .cart-icon {
+    font-size: 1.2rem; /* Smaller icons on smaller screens */
+  }
+}
